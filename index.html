@@ -282,6 +282,248 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-PS-master-Chapter1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2018/04/09/PS-master-Chapter1/" class="article-date">
+      <time datetime="2018-04-09T11:44:08.000Z" itemprop="datePublished">2018-04-09</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2018/04/09/PS-master-Chapter1/">PS-master-Chapter1</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="光和色的关系"><a href="#光和色的关系" class="headerlink" title="光和色的关系"></a>光和色的关系</h2><h1 id="初始色彩"><a href="#初始色彩" class="headerlink" title="初始色彩"></a>初始色彩</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">色彩的三个属性：</span><br><span class="line">1、色相（即色彩名称，又叫色彩相貌），英文名称——hue,简写为‘H’。例如我们平常所说的，红橙黄绿青蓝紫。通常用‘°’来衡量。注意，黑和白没有色相。</span><br><span class="line">2、饱和度（也称为纯度），英文名称——saturation, 简写为‘S’。通常用百分比来衡量。</span><br><span class="line">3、明度，英文名称——brightness, 简写为‘B’。通常用百分比来衡量。</span><br><span class="line"></span><br><span class="line">上述三种属性合在一起组成一个色彩模式，即‘HSB’。事实上，在photoshop里，有很多种色彩模式，例如，RGB，CMYK等等。</span><br><span class="line">每一种色彩模式都对应一种媒介，为什么呢？因为每一种模式都对应解释一种媒介体系。那么，‘HSB’对应的媒介，通俗地来说，就是人体</span><br><span class="line">眼睛的感受细胞。正式地来说，&apos;HSB&apos;是基于人眼视觉接受体系的一个色彩空间描述。</span><br><span class="line"></span><br><span class="line">光的三原色：红(R)、绿(G)、蓝(B)。这里的光是指一切发光的物体，也就是说，任何发光的物体，都可以有RGB这种色彩模式来描述。事实上，RGB对应的媒介就是发光物体。</span><br><span class="line">由此，我们知道了第二种色彩模式————RGB。在RGB模式里，每一种颜色都有256个级别，所以，一个像素点可以表示256x256x256≈1678万种颜色。</span><br><span class="line">试想，我们在一个房间里，把红绿蓝三种颜色的灯光全都关掉，那么屋里肯定是一片漆黑，所以在RGB里，0x0x0代表黑色，</span><br><span class="line">同样，把红绿蓝三种灯光都调到最亮，那么屋里肯定白的亮瞎你的眼，所以在RGB里255x255x255代表白色。</span><br><span class="line">那么像上述这种三种颜色调到最亮加在一起得到白色，即颜色越加明度越高，我们称之为加色模式。</span><br><span class="line">另外，在RGB中，三种颜色等值合成的是灰值（不具备色相）。色值低，深灰，反正为浅灰。</span><br><span class="line"></span><br><span class="line">色的三原色：青(C)，品红(M)，黄(Y).</span><br><span class="line">由此，我们知道了第三种色彩模型————CMY。这种色彩模式一般用在印刷行业里。</span><br><span class="line">试想，我们在一张白纸上印刷，青品黄三种颜料都不涂，白纸还是一张白纸，所以，在CMY里，0x0x0代表白色。</span><br><span class="line">同样，我们在一张白纸上把青品黄三种颜料都涂成100%，那么白纸就变成了一张黑纸，所以在CMY里，100%x100%x100%代表黑色。但是！但是，为什么印刷行业里用的是CMYK四色模式呢？</span><br><span class="line">这是因为，在印刷工业里，现代工艺无法做到100%纯正的颜料，多多少少会含有一点点杂质，那么这时候100%x100%x100%合成的颜色，肉眼看起来是黑色的，</span><br><span class="line">但仔细一看，其实是灰黑色的，里面带有一点点一点点的红色。所以在原来的三色体系上人为加上一种，黑色。由于‘B’这个字母已经被RGB中的&apos;B&apos;抢占了，所以只好用&apos;K&apos;来表示，</span><br><span class="line">这就得到了我们印刷行业用的四色体系————CMYK。那么，在CMYK里，黑色就是由100%x100%x100%x100%合成的。</span><br><span class="line">像上述这种三种颜色合成黑色，即颜色越加明度越低，我们称之为减色模式。</span><br></pre></td></tr></table></figure>
+<h1 id="再探RGB和CMY"><a href="#再探RGB和CMY" class="headerlink" title="再探RGB和CMY"></a>再探RGB和CMY</h1><p>如下图所示：红(R)+蓝(B)=品红(M)，红(R)+绿(G)=黄(H),蓝(B)+绿(G)=青(C)</p>
+<p><img src="/2018/04/09/PS-master-Chapter1/RGBvsCMY.jpg" alt=""></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-PS从入门到精通（六）" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2018/04/09/PS从入门到精通（六）/" class="article-date">
+      <time datetime="2018-04-09T02:49:26.000Z" itemprop="datePublished">2018-04-09</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2018/04/09/PS从入门到精通（六）/">PS从入门到精通（六）</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="亮度以及它和颜色的关系"><a href="#亮度以及它和颜色的关系" class="headerlink" title="亮度以及它和颜色的关系"></a>亮度以及它和颜色的关系</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">“亮度”在photoshop中，又叫作“阴影”，“色调”。</span><br><span class="line">在RGB图像中，测量亮度的水平，叫作“色阶”，范围从0-255,0代表黑色，255代表白色</span><br></pre></td></tr></table></figure>
+<h1 id="把亮度-对比度调整为一个动态的调整图层"><a href="#把亮度-对比度调整为一个动态的调整图层" class="headerlink" title="把亮度/对比度调整为一个动态的调整图层"></a>把亮度/对比度调整为一个动态的调整图层</h1><h1 id="使用“阴影-高光”命令"><a href="#使用“阴影-高光”命令" class="headerlink" title="使用“阴影/高光”命令"></a>使用“阴影/高光”命令</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用“阴影/高光”命令，意义在于校正或者优化一张对比度过强的图片</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/摄影与后期/">摄影与后期</a>
+    </div>
+
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-PS从入门到精通（四）" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2018/04/08/PS从入门到精通（四）/" class="article-date">
+      <time datetime="2018-04-08T12:14:57.000Z" itemprop="datePublished">2018-04-08</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2018/04/08/PS从入门到精通（四）/">PS从入门到精通（四）</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-PS从入门到精通（三）" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2018/04/07/PS从入门到精通（三）/" class="article-date">
+      <time datetime="2018-04-07T15:23:54.000Z" itemprop="datePublished">2018-04-07</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2018/04/07/PS从入门到精通（三）/">PS从入门到精通（三）</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="图像大小命令"><a href="#图像大小命令" class="headerlink" title="图像大小命令"></a>图像大小命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + Alt + &apos;I&apos;: 调出图像大小面板</span><br><span class="line">面板参数如下：</span><br><span class="line">1、尺寸：图片的物理大小</span><br><span class="line">2、宽度&amp;高度：默认情况下，这两个选项是链接在一起的，改变其中一个，另一个会等比例的改变，如果想单独改变其中的一项，需要将两个选项旁边的关联取消</span><br><span class="line">3、分辨率：每英尺包含的像素点(只与打印有关)</span><br><span class="line">4、重新采样：更改图像内像素总数</span><br></pre></td></tr></table></figure>
+<h1 id="几个术语"><a href="#几个术语" class="headerlink" title="几个术语"></a>几个术语</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1、上采样：增加图像中的像素数量</span><br><span class="line">2、下采样：减少图像中的像素数量</span><br><span class="line">3、插值：指当重新采样时，Photoshop必须重写图片中的每个像素，插值是程序平均旧像素创建新像素的方法</span><br></pre></td></tr></table></figure>
+<h1 id="如何根据像素计算图片未压缩的大小？"><a href="#如何根据像素计算图片未压缩的大小？" class="headerlink" title="如何根据像素计算图片未压缩的大小？"></a>如何根据像素计算图片未压缩的大小？</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">图片大小 = 总像素/1024/1024 MB</span><br><span class="line">一个RGB像素点占用3bytes,分别用来存储红色，绿色和蓝色的值</span><br><span class="line"></span><br><span class="line">举个例子：</span><br><span class="line">计算一个像素为 972px x670px 的图片的大小</span><br><span class="line">总像素 = 972x670 = 651240</span><br><span class="line">大小 = 651420x3÷1024÷1024 = 1.86MB</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/摄影与后期/">摄影与后期</a>
+    </div>
+
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-PS从入门到精通（二）" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
